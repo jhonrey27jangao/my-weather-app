@@ -2,16 +2,18 @@
 
 -This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 -Uses below tools:\
- *Auth0-react\
- *axios\
- *bootstrap & reactstrap\
- *formik & yup\
+ *[Auth0](https://auth0.com/)\
+ *[Axios](https://www.axios.com/)\
+ *[Bootstrap](https://getbootstrap.com/)\
+ *[Reactstrap](https://reactstrap.github.io/)\
+ *[Formik](https://formik.org/)\
+ *[Yup](https://www.npmjs.com/package/yup)\
 
 ## Notes before starting the Project
 
 Make sure you have the update .env file from your Team Lead
 
-example:
+example:\
 `REACT_APP_AUTH0_DOMAIN={}`\
 `REACT_APP_AUTH0_CLIENT_ID={}`\
 `REACT_APP_AUTH0_SECRET_KEY={}`\
