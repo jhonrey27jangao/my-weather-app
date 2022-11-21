@@ -1,6 +1,23 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-Uses below tools: 
+ *Auth0-react
+ *axios
+ *bootstrap & reactstrap
+ *formik & yup
+
+## Notes before starting the Project
+
+Make sure you have the update .env file from your Team Lead
+
+example:
+`
+REACT_APP_AUTH0_DOMAIN={}
+REACT_APP_AUTH0_CLIENT_ID={}
+REACT_APP_AUTH0_SECRET_KEY={}
+REACT_APP_WATHER_API_KEY={}
+`
 
 ## Available Scripts
 
@@ -68,3 +85,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# my-weather-app

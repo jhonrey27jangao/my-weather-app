@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.link-btn {
+  color: #fff;
+}
+
+.link-btn:hover {
+  color: #fff;
+  font-weight: 500;
+}
+
+.home-container {
+  width: 550px;
+  margin: auto;
+}
+
+.home-container form {
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .home-container  {
+    width: auto; 
+  }
+}

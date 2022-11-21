@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Auth0Provider } from "@auth0/auth0-react";
+import Home from "./pages/home";
+import Landing from "./pages/landing";
+import Weather from "./pages/weather";
+import Navbar from "./components/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { ProtectedRoute } from "./utils/helpers";
 
 function App() {
+  const auth0Domain = process.env.REACT_APP_AUTH0_DOMAIN;
+  const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Auth0Provider
+        domain={auth0Domain}
+        clientId={clientId}
+        redirectUri={window.location.origin}
+      >
+        <Router>
+          <div id="main">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route
+                path="weather"
+                element={<ProtectedRoute component={Weather} />}
+              />
+              <Route
+                path="home"
+                element={<ProtectedRoute component={Home} />}
+              />
+              <Route path="*" element={<Landing />} />
+            </Routes>
+          </div>
+        </Router>
+      </Auth0Provider>
+    </>
   );
 }
 
