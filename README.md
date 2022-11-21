@@ -7,7 +7,7 @@
  *[Bootstrap](https://getbootstrap.com/)\
  *[Reactstrap](https://reactstrap.github.io/)\
  *[Formik](https://formik.org/)\
- *[Yup](https://www.npmjs.com/package/yup)\
+ *[Yup](https://www.npmjs.com/package/yup)
 
 ## Notes before starting the Project
 
@@ -17,7 +17,7 @@ example:\
 `REACT_APP_AUTH0_DOMAIN={}`\
 `REACT_APP_AUTH0_CLIENT_ID={}`\
 `REACT_APP_AUTH0_SECRET_KEY={}`\
-`REACT_APP_WATHER_API_KEY={}`\
+`REACT_APP_WATHER_API_KEY={}`
 
 ## Available Scripts
 
